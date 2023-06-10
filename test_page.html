@@ -3,58 +3,38 @@
     <head>
         <title>Website Layout Example</title>
         <script src="navbar.js"></script>
-  <style>
-    /* CSS styles for the layout */
-    body {
-      margin: 0;
-      padding: 0;
-    }
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    .container {
-      display: flex;
-      height: 100vh;
-    }
-
-    .left {
-      flex: 1;
-      background-color: #ffcccc;
-      padding: 20px;
-      color: #333;
-    }
-
-    .center {
-      flex: 2;
-      background-color: #ccffcc;
-      padding: 20px;
-      color: #333;
-    }
-
-    .right {
-      flex: 1;
-      background-color: #ccccff;
-      padding: 20px;
-      color: #333;
-    }
-  </style>
 </head>
 <header>
-    <div id="navbar-container"></div>
+    <!-- <div id="navbar-container"></div> -->
 </header>
 <body>
+  <div class="row" id="header-container"></div>
+  <div class="pt-5"></div>
     <!-- test second html page-->
-  <div class="container">
-    <div class="left">
-      <h2>Left Container</h2>
-      <p>This is the left container.</p>
+    <div class="container-fluid" style="border: 1px solid blue; padding: 10px;">
+      <h1>Bio</h1>
+      <p>This is some text.</p>
     </div>
-    <div class="center">
-      <h2>Center Container</h2>
-      <p>This is the center container.</p>
+    <div class="container-fluid" style="border: 1px solid blue; padding: 10px;">
+      <h1>Peersonal Statement</h1>
+      <p>This is some text.</p>
     </div>
-    <div class="right">
-      <h2>Right Container</h2>
-      <p>This is the right container.</p>
+
+    <div class="container-fluid" style="border: 1px solid blue; padding: 10px;">
+      <h1>Contact</h1>
+      <p>This is some text.</p>
     </div>
-  </div>
+
+    <div class="container-fluid mt-3">
+      <h1>Three equal width columns</h1>
+      <p>Note: Try to add a new div with class="col" inside the row class - this will create four equal-width columns.</p>
+      <div class="row">
+        <div class="col p-3 bg-primary text-white">.col</div>
+        <div class="col p-3 bg-dark text-white">.col</div>
+        <div class="col p-3 bg-primary text-white">.col</div>
+      </div>
+    </div>
 </body>
 </html>
