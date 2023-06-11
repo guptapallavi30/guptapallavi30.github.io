@@ -9,7 +9,7 @@
     <header>
         
     </header>
-    <body>
+    <body class="container-fluid background">
         <!-- creates a navbar that has links to new html pages. 
             If the screen width is too small, it collapses the links
             and replaces them with a 3 bar list icon that will behave
@@ -58,12 +58,17 @@
             </div>
         </div>
 
-
-
-        <div class="container-fluid" style="border: 1px solid blue; padding: 10px;">
-            <h1>Bio</h1>
-            <p>This is some text.</p>
-          </div>
+        <div class="container-fluid">
+            <div class="row background">
+                <div class="col-2" style="border: 1px solid blue; padding: 10px;">.col-sm-1</div>
+                <div class="col-8 panel" style="border: 1px solid blue; padding: 10px;" >
+                    <h1>Bio</h1>
+                    <p>This is some text.</p>
+                </div>
+                <div class="col-2" style="border: 1px solid blue; padding: 10px;">.col-sm-1</div>
+            </div>
+        </div>
+        
           <div class="container-fluid" style="border: 1px solid blue; padding: 10px;">
             <h1>Peersonal Statement</h1>
             <p>This is some text.</p>
