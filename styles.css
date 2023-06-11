@@ -6,6 +6,8 @@
     margin: 40px 0px 5px;
     padding: 20px;
   }
-.background {
+.background-basic {
     background-color: #1a9980;
+    width: 100vw; /* ensures that the width adjusts to screen width */
+    height: 100vh; /* ensures that the height equal to screen height. */
 }
