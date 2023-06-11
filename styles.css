@@ -15,18 +15,36 @@
     position: relative;
   }
   
-  .video {
+.video {
     width: 100vw;
     height: 100vh;
-  }
-  
-  .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+}
+
+.video-text-overlay {
+    position: absolute; /* the element can be placed anywhere on page (NOT relative to parent). */
+    top: 50%; /*move top left edge till half of parent height */
+    left: 50%; /*move top left edge till half of top width */
+    transform: translate(-50%, -50%); /*move up and riight 50% of OWN width; centered achieved. */
+    z-index: 1; /* stacking order. higher val, on top*/
     color: white;
     font-size: 24px;
+    text-align: center; /*This property horizontally aligns the text within the element to the center.*/
+}
+
+.test-border {
+    border: 1px solid blue; 
+    padding: 10px;
+}
+.heading-words {
+    font-size: 100px;
+    z-index: 2;
+}
+.description-words {
+    font-size: 70px;
+    transform: translate(0%, -50%);
     text-align: center;
-  }
+    color:white;
+    z-index: 0;
+}
+
+/* even with viewport width set, after scrolling, i can still see white part MUST FIX*/
