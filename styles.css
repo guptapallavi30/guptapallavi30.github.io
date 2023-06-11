@@ -11,3 +11,22 @@
     width: 100vw; /* ensures that the width adjusts to screen width */
     height: 100vh; /* ensures that the height equal to screen height. */
 }
+.video-container {
+    position: relative;
+  }
+  
+  .video {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+  }
