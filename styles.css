@@ -1,16 +1,32 @@
-.panel {
-    background-color: gold;
-    border: 3px solid gold;
-    /* border-radius: 10px; */
-    box-shadow: 0 0 10px white;
-    margin: 40px 0px 5px;
-    padding: 20px;
-  }
-.background-basic {
-    background-color: #45193f;
-    width: 100vw; /* ensures that the width adjusts to screen width */
-    height: 100vh; /* ensures that the height equal to screen height. */
+/* FOR TESTING ------------------------------ */
+.test-border {
+  border: 1px solid blue; 
 }
+/* END OF TESTING */
+
+/* FOR BACKGROUND LAYOUT ------------------------------ */
+.background-basic {
+  background-color: #45193f;
+  width:100vw; /* ensures that the width adjusts to screen width */
+  height: max(100vh,500px); /* ensures that the height equal to screen height. */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+.colors {
+  color: #45193f;
+  color: #7b417b;
+  color: #af73a9;
+  color: #fd5862;
+  color: #fd7769;
+  color: #fd8f55;
+} 
+/* END OF BACKGROUND LAYOUT */
+
+/* FOR VIDEO AND CORRESPONDING TEXT ------------------------------ */
 .video-container {
     position: relative;
   }
@@ -30,34 +46,13 @@
     font-size: 24px;
     text-align: center; /*This property horizontally aligns the text within the element to the center.*/
 }
+/* END OF VIDEO AND CORRESPONDING TEXT */
 
-.test-border {
-    border: 1px solid blue; 
-}
-.heading-words {
-    position: relative; /* the element can be placed anywhere on page (NOT relative to parent). */
-    /* top: 0%; move top left edge till half of parent height */
-    left: 30%; /*move top left edge till half of top width */
-    transform: translate(-50%, -50%);  /*move up and right 50% of OWN width; centered achieved. */
-    z-index: 2; /* stacking order. higher val, on top*/
-    color: black;
-    text-align: center; /* This property horizontally aligns the text within the element to the center. */
-    font-size: 300px;
-    /* display: flex; */
-}
-
-
-/* even with viewport width set, after scrolling, i can still see white part MUST FIX*/
-
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
+/* FOR TEXT - BIO PAGE ------------------------------ */
 .container { /* for text in BIO page */
     display: flex; 
     height: min(60vh, 60vw);
-    width:  min(90vh, 90vw);
+    width:  min(70vh, 70vw);
     border: 1px solid #000;
     position: relative;
     flex-direction: column;
@@ -97,22 +92,58 @@ body, html {
     font-weight: 1;
     color:  white;
   }
+/* END OF TEXT - BIO PAGE */
+
+/* FOR FLIPPED CARDS */
+.flip-card-border {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.flip-card {
+  background-color: transparent;
+  width: max(20vh,20vw);
+  height:max(20vh,20vw);
+  perspective: 1000px;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* END OF FLIPPED CARDS */
 
 
-/* to add space after a text */
- /* h1::after {
-/*   content: ""; /* Empty content */
- /*  display: inline-block;
-    width: 40px; /* Adjust the width to set the desired white space */
- /* } */
-
-  .colors {
-    color: #45193f;
-    color: #7b417b;
-    color: #af73a9;
-    color: #fd5862;
-    color: #fd7769;
-    color: #fd8f55;
-  } 
 
   
