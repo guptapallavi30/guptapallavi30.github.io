@@ -7,7 +7,7 @@
     padding: 20px;
   }
 .background-basic {
-    background-color: #1a9980;
+    background-color: #45193f;
     width: 100vw; /* ensures that the width adjusts to screen width */
     height: 100vh; /* ensures that the height equal to screen height. */
 }
@@ -33,18 +33,86 @@
 
 .test-border {
     border: 1px solid blue; 
-    padding: 10px;
 }
 .heading-words {
-    font-size: 100px;
-    z-index: 2;
-}
-.description-words {
-    font-size: 70px;
-    transform: translate(0%, -50%);
-    text-align: center;
-    color:white;
-    z-index: 0;
+    position: relative; /* the element can be placed anywhere on page (NOT relative to parent). */
+    /* top: 0%; move top left edge till half of parent height */
+    left: 30%; /*move top left edge till half of top width */
+    transform: translate(-50%, -50%);  /*move up and right 50% of OWN width; centered achieved. */
+    z-index: 2; /* stacking order. higher val, on top*/
+    color: black;
+    text-align: center; /* This property horizontally aligns the text within the element to the center. */
+    font-size: 300px;
+    /* display: flex; */
 }
 
+
 /* even with viewport width set, after scrolling, i can still see white part MUST FIX*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+.container { /* for text in BIO page */
+    display: flex; 
+    height: min(60vh, 60vw);
+    width:  min(90vh, 90vw);
+    border: 1px solid #000;
+    position: relative;
+    flex-direction: column;
+  }
+
+.title-container { /*for bigger letters */
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+  
+
+.text-container { /* for all text */
+    position: relative;
+  }
+  
+  .text-container h1 {
+    font-size: min(30vh, 30vw);
+    color: #45193f;
+    text-align:end;
+  }
+  .text-container h3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+    font-size: min(5vh, 5vw);
+    font-weight: bold;
+    color:  white;
+  }
+  
+  .text-container p {
+    top: 0;
+    right: 0;
+    text-align:end;
+    /* transform: translate(50%, 50%); */
+    font-size: min(3vh, 3vw);
+    font-weight: 1;
+    color:  white;
+  }
+
+
+/* to add space after a text */
+ /* h1::after {
+/*   content: ""; /* Empty content */
+ /*  display: inline-block;
+    width: 40px; /* Adjust the width to set the desired white space */
+ /* }
+
+  .colors {
+    color: #45193f;
+    color: #7b417b;
+    color: #af73a9;
+    color: #fd5862;
+    color: #fd7769;
+    color: #fd8f55;
+  } */
+
+  
