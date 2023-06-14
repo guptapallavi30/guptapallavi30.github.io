@@ -8,7 +8,7 @@
 .background-basic {
   background-color: #45193f;
   width:100vw; /* ensures that the width adjusts to screen width */
-  height: max(100vh,500px); /* ensures that the height equal to screen height. */
+  height: max(100vh,700px); /* ensures that the height equal to screen height. */
 }
 
 body, html {
@@ -94,20 +94,44 @@ body, html {
   }
 /* END OF TEXT - BIO PAGE */
 
-/* FOR FLIPPED CARDS */
-.flip-card-border {
-  display:flex;
+/* FOR FLEX CONTAINERS */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  flex: 0 0 25%; /* Adjust the percentage as needed */
+  width: max(20vh,20vw);
+  height: max(20vh,20vw); /* Adjust the height as needed */
+  background-color: #ccc;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  display: flex; /* this box will be a flex box */
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 768px) or (orientation: portrait) {
+  .flex-item {
+    flex-basis: 100%; /* Set to 100% to stack in a column */
+  }
+} 
+
+.square {
+width: min(100%,max(18vw, 18vh));
+height: min(100%,max(18vw, 18vh));
+background-color: #ffcccc;
+display:flex;
+}
+/*END OF FLEX CONTAINERS */
+
+/* FOR FLIPPED CARDS */
 .flip-card {
   background-color: transparent;
-  width: max(20vh,20vw);
-  height:max(20vh,20vw);
+  width: 100%;
+  height:100%;
   perspective: 1000px;
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .flip-card-inner {
