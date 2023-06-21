@@ -5,68 +5,69 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link href="styles.css" rel="stylesheet">
   <style>
-    .flex-container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .flex-item {
-      flex: 0 0 25%; /* Adjust the percentage as needed */
-      width: max(20vh,20vw);
-      height: max(20vh,20vw); /* Adjust the height as needed */
-      background-color: #ccc;
-      border: 1px solid #000;
-      box-sizing: border-box;
-      display: flex; /* this box will be a flex box */
-      justify-content: center;
-      align-items: center;
-    }
-
-    @media (max-width: 768px) or (orientation: portrait) {
-      .flex-item {
-        flex-basis: 100%; /* Set to 100% to stack in a column */
+          body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
       }
-    } 
   
-  .square {
-    width: min(100%,max(18vw, 18vh));
-    height: min(100%,max(18vw, 18vh));
-    background-color: #ffcccc;
-    display:flex;
-  }
+      .container {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+      }
+  
+      .box {
+        display: flex;
+        margin-bottom: 10px;
+      }
+  
+      .box:first-child {
+        width: 100px;
+        height: 100px;
+        position: relative;
+      }
+  
+      .box:first-child .logo {
+        width: 100%;
+        height: 100%;
+        animation: spin 1s linear infinite;
+      }
+  
+      .box:last-child {
+        flex: 1;
+        background-color: lightgray;
+      }
+  
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
   </style>
 </head>
 <body>
 
-<div class="container-fluid">
-  <div class="row" style="height:20vh;"></div>
-  <div class="row">
-    <div class="col">
-      <div class="flex-container">
-        <div class="flex-item">
-            <div class="square">
-              <div class="test-border flip-card" style="background-color: #777;">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src="CVProjectCover.png" alt="CVProjectCover" width="100%" height="100%">
-                  </div>
-                  <div class="flip-card-back">
-                    <h1>John Doe</h1> 
-                    <p>Architect & Engineer</p> 
-                    <p>We love that guy</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="container">
+      <div class="box">
+        <div class="logo">
+          <!-- Insert your logo here -->
         </div>
-        <div class="flex-item"></div>
-        <div class="flex-item"></div>
-        <div class="flex-item"></div>
+      </div>
+      <div class="box">
+        <div class="text-box">
+          <p>This is some text that fills the remainder of the parent box.</p>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
+  
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>
