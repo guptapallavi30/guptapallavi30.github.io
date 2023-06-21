@@ -86,8 +86,8 @@ body {
 
 .experience-logo {
   border: 1px solid black;
-  height: min(18vw, 18vh);
-  width: min(18vw, 18vh);
+  height: min(100%, 18vw, 18vh);
+  width: min(100%, 18vw, 18vh);
 }
 
 .experience-description {
