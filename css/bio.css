@@ -7,7 +7,7 @@ body {
 
 .sections {
   border: 1px solid black;
-  height: 100vh;
+  height: max(100vh, 800px);
   width: 100vw;
   display: flex;
   overflow-y: hidden;
@@ -75,6 +75,7 @@ body {
   align-items:center;
   justify-content: flex-start;
   border: 1px solid black;
+  margin:0;
 }
 
 .experience-box-right {
@@ -92,9 +93,34 @@ body {
 }
 
 .experience-description {
-  padding:2px;
+  padding: 2px;
   border: 1px solid black;
+  font-size: 15px;
+  width:80%;
+  display: flex;
+  /* overflow: hidden; */
+  position: relative;
+  z-index:1;
 }
+
+.experience-description-cover {
+  width: 50%;
+  height: 100%;
+  background-color: grey;
+  border: 1px solid black;
+  position: absolute;
+  top:0%;
+  right: 0;
+  z-index: 2;
+  animation: remove-cover 2s infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes remove-cover {
+  from {width: 100%;}
+  to {width: 0%;}
+}
+
 
 .experience-header {
   height: 30px;
