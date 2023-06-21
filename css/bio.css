@@ -2,15 +2,15 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
 
-.bioclass {
+.sections {
   border: 1px solid black;
   height: 100vh;
   width: 100vw;
   display: flex;
   overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 .text-box-container-big {
@@ -55,3 +55,42 @@ body {
     font-weight: bold;
     color:  white;
   }
+
+.set-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.experiences-section {
+  display:flex;
+  flex-direction: column;
+  width:80%;
+  height:80%;
+}
+
+.experience-box-left {
+  flex: 1;
+  display:flex;
+  align-items:center;
+  justify-content: flex-start;
+  border: 1px solid black;
+}
+
+.experience-box-right {
+  flex: 1;
+  display:flex;
+  align-items:center;
+  justify-content: flex-end;
+  border: 1px solid black;
+}
+
+.experience-logo {
+  border: 1px solid black;
+  height: min(18vw, 18vh);
+  width: min(18vw, 18vh);
+}
+
+.experience-description {
+  padding:2px;
+  border: 1px solid black;
+}
