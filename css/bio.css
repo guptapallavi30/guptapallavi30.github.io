@@ -59,6 +59,7 @@ body {
 .set-center {
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .experiences-section {
@@ -93,4 +94,17 @@ body {
 .experience-description {
   padding:2px;
   border: 1px solid black;
+}
+
+.experience-header {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  margin-bottom: 13px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.experience-header h3 {
+  font-size: min(15vh, 15vw);
 }
