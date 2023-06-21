@@ -119,8 +119,8 @@ body, html {
 } 
 
 .square {
-width: min(100%,max(18vw, 18vh));
-height: min(100%,max(18vw, 18vh));
+width: min(100%,max( 18vh));
+height: min(100%,max( 18vh));
 background-color: #ffcccc;
 display:flex;
 }
