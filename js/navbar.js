@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
+  debugger
     var container = document.getElementById("header-container");
-    fetch("header.html")
+    fetch("../pages/header.html")
       .then(function(response) {
         console.log("got navbar response");
         return response.text();
