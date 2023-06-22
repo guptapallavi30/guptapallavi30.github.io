@@ -13,24 +13,27 @@
 
 <body>
   <script>
-    document.addEventListener("DOMContentLoaded", function(){
+    document.addEventListener("DOMContentLoaded", function() {
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-          const square = entry.target.querySelector('.experience-description-cover');
-
-          if (entry.isIntersecting) {
-            console.log("adding animation class");
-            square.classList.add('run-experience-description-cover');
-            return; // if we added the class, exit the function
-          }
-          // We're not intersecting, so remove the class!
-          square.classList.remove('run-experience-description-cover');
+          const squares = entry.target.querySelectorAll('.experience-description-cover');
+  
+          squares.forEach(square => {
+            if (entry.isIntersecting) {
+              console.log("adding animation class");
+              square.classList.add('run-experience-description-cover');
+            } else {
+              // We're not intersecting, so remove the class!
+              square.classList.remove('run-experience-description-cover');
+            }
+          });
         });
       });
-
-      observer.observe(document.querySelector('.experience-wrapper'));  
+  
+      observer.observe(document.querySelector('.experience-wrapper'));
     });
   </script>
+ 
     <!-- NAV BAR-->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
@@ -91,25 +94,28 @@
                 </div>
             </div>
             <div class="bg-warning experience-box-right" >
-              <p class="experience-description">
-                <b>AMAZON sde intern.</b> <br> Developed an automated pipeline for LinkTree to maintain production data consistency using JavaScript and APIs + documentation for both internal and external teams. 
-              </p>
+              <div class="experience-description">
+                <div class="experience-description-cover cover-left"></div>
+                 sde intern.Developed an automated pipeline for LinkTree to maintain production data consistency using JavaScript and APIs + documentation for both internal and external teams. 
+              </div>
               <div class="experience-logo">
                 <img src="../Images/RedsealLogo.png" style="width:100%">
               </div>
             </div>
-            <div class="bg-primary experience-box-left" >
+            <div class="bg-info experience-box-left" >
               <div class="experience-logo">
-                <img src="../Images/PennAppsLogo.png" style="width:100%">
+                <img src="../Images/AmazonLogo.png" style="width:100%">
               </div>
-              <p class="experience-description">
-                <b>AMAZON sde intern.</b> <br> Developed an automated pipeline for LinkTree to maintain production data consistency using JavaScript and APIs + documentation for both internal and external teams. 
-              </p>
+                <div class="experience-description">
+                  <div class="experience-description-cover cover-right"></div>
+                  SDE Intern (June 2022 - September 2022): Developed an automated pipeline for LinkTree to maintain production data consistency using JavaScript and APIs, along with documentation for both internal and external teams.
+                </div>
             </div>
             <div class="bg-info experience-box-right" >
-              <p class="experience-description">
-                <b>AMAZON sde intern.</b> <br> Developed an automated pipeline for LinkTree to maintain production data consistency using JavaScript and APIs + documentation for both internal and external teams. 
-              </p>
+                <div class="experience-description">
+                  <div class="experience-description-cover cover-left"></div>
+                  SDE Intern (June 2022 - September 2022): Developed an automated pipeline for LinkTree to maintain production data consistency using JavaScript and APIs, along with documentation for both internal and external teams.
+                </div>
               <div class="experience-logo">
                 <img src="../Images/HackdavisLogo.png" style="width:100%">
               </div>
@@ -118,9 +124,10 @@
               <div class="experience-logo">
                 <img src="../Images/UCDResearchLogo.png" style="width:100%">
               </div>
-              <p class="experience-description">
-                <b>AMAZON sde intern.</b> <br> Developed an automated pipeline for LinkTree to maintain production data consistency using JavaScript and APIs + documentation for both internal and external teams. 
-              </p>
+                <div class="experience-description">
+                  <div class="experience-description-cover cover-right"></div>
+                  SDE Intern (June 2022 - September 2022): Developed an automated pipeline for LinkTree to maintain production data consistency using JavaScript and APIs, along with documentation for both internal and external teams.
+                </div>
             </div>    
         </div>
     </div>
