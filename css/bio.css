@@ -239,18 +239,22 @@ body {
   transform: translate(120%, -60%);
 }
 
-.contact-letters {
+.letter-groups {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.letter {
+.letter-box {
   width: 170px;
   height: 170px;
   background-color: #f0f0f0;
   margin: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
 }
 
 /*
