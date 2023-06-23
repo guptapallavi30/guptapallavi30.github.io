@@ -174,8 +174,6 @@ body {
   height:75%;
   border: 1px solid black;
   position: absolute;
-  /* top:0%; */
-  /* z-index: 2; */
 }
 
 .hexagons-row-1 { /* for the top and bottom rows */
@@ -194,20 +192,14 @@ body {
   width:100%;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 .hexagons-box {
-  aspect-ratio: 23 / 20;
-  height: 100%;
-  background-color: lightcyan;
   border: 1px solid black;
-  z-index:2;
+  height: min(100%, 160px);
+  width: min(100%, 160px);
   display: flex;
   align-items: center;
   justify-content: center;
-
-  
-  
 }
 .hexagons-box-left {
   transform: translate(-25%, 0%);
@@ -264,8 +256,8 @@ body {
   left: calc(50% + 50px); /* Adjust as needed */
 }
 /*hexagon on click or hover, flip/expand to show youtube link, description. 
-near/on each hexaagon, will bee aa star indicating any awards.
-in the center of thee hexagon, will be the word projects.
+near/on each hexagon, will bee aa star indicating any awards.
+in the center of the hexagon, will be the word projects.
 4 projects, then animation and 3d modeling section */
 
 /* the contact sectiion will be contact. is huugee letters, and inside the letters will be the option
