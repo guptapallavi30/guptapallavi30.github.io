@@ -56,6 +56,8 @@ body {
     color:  white;
   }
 
+  /* experience panel */
+
 .set-center {
   align-items: center;
   justify-content: center;
@@ -67,24 +69,23 @@ body {
   flex-direction: column;
   width:80%;
   height:80%;
+  border: 1px solid black;
 }
-
-.experience-box-left {
+.experience-box {
   flex: 1;
   display:flex;
   align-items:center;
-  justify-content: flex-start;
+  justify-content: center;
   border: 1px solid black;
-  margin:0;
+}
+
+.justify-left {
+  justify-content: flex-start;
   text-align: left;
 }
 
-.experience-box-right {
-  flex: 1;
-  display:flex;
-  align-items:center;
+.justify-right {
   justify-content: flex-end;
-  border: 1px solid black;
   text-align: right;
 }
 
@@ -123,6 +124,7 @@ body {
   z-index: 2;
 }
 
+
 .cover-left {
   left:0;
 }
@@ -153,3 +155,118 @@ body {
 .experience-header h3 {
   font-size: min(15vh, 15vw);
 }
+
+
+.hexagon-section-1 {
+  display:flex;
+  flex-direction: column;
+  width:80%;
+  height:80%;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hexagon-section-2 {
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  height:75%;
+  border: 1px solid black;
+  position: absolute;
+  /* top:0%; */
+  /* z-index: 2; */
+}
+
+.hexagons-row-1 { /* for the top and bottom rows */
+  flex: 1;
+  display:flex;
+  border: 1px solid black;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.hexagons-row-2 { /* for the middle two rows */
+  flex: 1;
+  display:flex;
+  border: 1px solid black;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hexagons-box {
+  aspect-ratio: 23 / 20;
+  height: 100%;
+  background-color: lightcyan;
+  border: 1px solid black;
+  z-index:2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+  
+}
+.hexagons-box-left {
+  transform: translate(-25%, 0%);
+}
+.hexagons-box-right {
+  transform: translate(25%, 0%);
+}
+
+/* projects panel */
+.hexagon-container {
+
+  width: 300px; /* Adjust as needed */
+  height: 346px; /* Adjust as needed */
+  position: relative;
+}
+
+.hexagon {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  background-color: #eaeaea; /* Adjust as needed */
+  position: absolute;
+  transform: rotate(-30deg);
+}
+.hexagon:nth-child(1) {
+  background-color: aqua;
+}
+.hexagon:nth-child(2) {
+  background-color: orange;
+}
+.hexagon:nth-child(1),
+.hexagon:nth-child(2),
+.hexagon:nth-child(3) {
+  top: 0;
+}
+
+.hexagon:nth-child(4),
+.hexagon:nth-child(5),
+.hexagon:nth-child(6) {
+  bottom: 0;
+}
+
+.hexagon:nth-child(1),
+.hexagon:nth-child(6) {
+  left: calc(50% - 50px); /* Adjust as needed */
+}
+
+.hexagon:nth-child(2),
+.hexagon:nth-child(5) {
+  left: calc(50% - 100px); /* Adjust as needed */
+}
+
+.hexagon:nth-child(3),
+.hexagon:nth-child(4) {
+  left: calc(50% + 50px); /* Adjust as needed */
+}
+/*hexagon on click or hover, flip/expand to show youtube link, description. 
+near/on each hexaagon, will bee aa star indicating any awards.
+in the center of thee hexagon, will be the word projects.
+4 projects, then animation and 3d modeling section */
+
+/* the contact sectiion will be contact. is huugee letters, and inside the letters will be the option
+to email, access resume, access linkedin amd github, */
