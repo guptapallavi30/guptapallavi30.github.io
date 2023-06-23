@@ -212,16 +212,31 @@ body {
 
 .project-info-circle {
   position: absolute;
-  width: 100px; /* Adjust the width and height as needed */
   height: 100px;
+  width: 100px;
   border-radius: 50%; /* Creates a circle by setting the border-radius to 50% */
   background-color: #f00; /* Specify the background color for the circle */
   z-index:0;
   transition: transform 0.6s;
 }
 
-.hexagons-box:hover .project-info-circle {
+.hexagons-box:hover .project-info-circle.circ_bl {
+  transform: translate(-120%, 60%);
+}
+.hexagons-box:hover .project-info-circle.circ_b {
   transform: translate(0%, 125%);
+}
+.hexagons-box:hover .project-info-circle.circ_br {
+  transform: translate(120%, 60%);
+}
+.hexagons-box:hover .project-info-circle.circ_tl {
+  transform: translate(-120%, -60%);
+}
+.hexagons-box:hover .project-info-circle.circ_t {
+  transform: translate(0%, -125%);
+}
+.hexagons-box:hover .project-info-circle.circ_tr {
+  transform: translate(120%, -60%);
 }
 
 /*
