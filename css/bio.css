@@ -221,22 +221,22 @@ body {
 }
 
 .hexagons-box:hover .project-info-circle.circ_bl {
-  transform: translate(-120%, 60%);
+  transform: translate(-120%, 65%);
 }
 .hexagons-box:hover .project-info-circle.circ_b {
-  transform: translate(0%, 125%);
+  transform: translate(0%, 135%);
 }
 .hexagons-box:hover .project-info-circle.circ_br {
-  transform: translate(120%, 60%);
+  transform: translate(120%, 65%);
 }
 .hexagons-box:hover .project-info-circle.circ_tl {
-  transform: translate(-120%, -60%);
+  transform: translate(-120%, -65%);
 }
 .hexagons-box:hover .project-info-circle.circ_t {
-  transform: translate(0%, -125%);
+  transform: translate(0%, -130%);
 }
 .hexagons-box:hover .project-info-circle.circ_tr {
-  transform: translate(120%, -60%);
+  transform: translate(120%, -65%);
 }
 
 .letter-groups {
