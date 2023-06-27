@@ -285,6 +285,27 @@ body {
   border: 1px solid black;
 }
 
+.PS-container {
+  display:flex;
+  width:80%;
+  height:80%;
+  flex-direction: column;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+}
+
+.PS-container-title-box {
+  border: 1px solid black;
+  font-size: max(min(15vh, 15vw), 100px)
+}
+
+.PS-container p {
+  border: 1px solid black;
+  font-size: 25px;
+  text-align:center;
+}
+
 /*
 .hexagon {
   width: 100px; 
