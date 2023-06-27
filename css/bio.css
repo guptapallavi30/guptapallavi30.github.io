@@ -37,12 +37,13 @@ body {
     justify-content: flex-end;
   }
   
-.text-box h1 {
+.text-box h2 {
     font-size: max(min(25vh, 25vw), 200px);
     color: #45193f;
     border: 1px solid black;
     text-align:end;
     margin-bottom:0%;
+    display: flex;
   }
 
 .text-box p {
@@ -73,7 +74,7 @@ body {
 .experiences-section {
   display:flex;
   flex-direction: column;
-  width:80%;
+  width:90%;
   height:80%;
   border: 1px solid black;
 }
