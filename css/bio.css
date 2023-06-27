@@ -12,7 +12,13 @@ body {
   display: flex;
   overflow-y: hidden;
 }
-
+.photo-container {
+  display:flex;
+  height:60%;
+  width: 100%;
+  align-items:center;
+  justify-content: center;
+}
 .text-box-container-big {
     display:flex;
     height:100%;
