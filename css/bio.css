@@ -160,6 +160,7 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+  z-index: 2;
 }
 .experience-header h3 {
   font-size: max(min(15vh, 15vw), 100px);
