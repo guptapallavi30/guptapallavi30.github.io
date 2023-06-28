@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'League Spartan', sans-serif !important;
   }
 
 .sections {
@@ -130,7 +131,7 @@ body {
 }
 
 .experience-description-cover {
-  height: 80%;
+  height: 100%;
   background-color: #fd5862;
   border-radius: 20px;
   position: absolute;
