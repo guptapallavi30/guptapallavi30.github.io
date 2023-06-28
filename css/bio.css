@@ -6,7 +6,7 @@ body {
   }
 
 .sections {
-  border: 1px solid black;
+  
   height: max(100vh, 1000px);
   width: 100vw;
   display: flex;
@@ -23,7 +23,7 @@ body {
     display:flex;
     height:100%;
     width: 45%;
-    border: 1px solid black;
+    
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -32,7 +32,7 @@ body {
 .text-box {
     display:flex;
     width: 100%;
-    border: 1px solid black;
+    
     /* align-items:flex-end; */
     justify-content: flex-end;
   }
@@ -40,7 +40,7 @@ body {
 .text-box h2 {
     font-size: max(min(25vh, 25vw), 200px);
     color: #45193f;
-    border: 1px solid black;
+    
     text-align:end;
     margin-bottom:0%;
     display: flex;
@@ -48,7 +48,7 @@ body {
 
 .text-box p {
     width:80%;
-    border: 1px solid black;
+    
     text-align:right;
     margin-top:0%;
     font-size: max(min(3vh, 3vw), 24px);
@@ -61,6 +61,7 @@ body {
     font-size: max(min(5vh, 5vw), 40px);
     font-weight: bold;
     color:  white;
+    margin-bottom: 40px;
   }
 
   /* experience panel */
@@ -76,14 +77,14 @@ body {
   flex-direction: column;
   width:90%;
   height:80%;
-  border: 1px solid black;
+  
 }
 .experience-box {
   flex: 1;
   display:flex;
   align-items:center;
   justify-content: center;
-  border: 1px solid black;
+  
 }
 
 .justify-left {
@@ -97,7 +98,7 @@ body {
 }
 
 .experience-logo {
-  border: 1px solid black;
+  
   height: max(min(18vw, 18vh),120px);
   width: max(min(18vw, 18vh),120px);
   display: flex;
@@ -107,7 +108,7 @@ body {
 
 .experience-description {
   padding: 2px;
-  border: 1px solid black;
+  
   font-size: 15px;
   width:80%;
   display: flex;
@@ -116,19 +117,22 @@ body {
   z-index:1;
   color:white;
   flex-direction: column;
+  border: 1px solid white;
+  border-radius: 20px; 
 }
 
 .experience-description b {
   font-size: 18px;
+  
 }
 .experience-description p {
   font-size: 16px;
 }
 
 .experience-description-cover {
-  height: 100%;
+  height: 80%;
   background-color: #fd5862;
-  border: 1px solid black;
+  border-radius: 20px;
   position: absolute;
   top:0%;
   z-index: 2;
@@ -156,7 +160,7 @@ body {
 .experience-header {
   height: 30px;
   width: 30px;
-  border: 1px solid black;
+  
   margin-bottom: 13px;
   justify-content: center;
   align-items: center;
@@ -173,7 +177,7 @@ body {
   flex-direction: column;
   width:80%;
   height:80%;
-  border: 1px solid black;
+  
   justify-content: center;
   align-items: center;
   position: relative;
@@ -183,14 +187,14 @@ body {
   flex-direction: column;
   width:100%;
   height:75%;
-  border: 1px solid black;
+  
   position: absolute;
 }
 
 .hexagons-row-1 { /* for the top and bottom rows */
   flex: 1;
   display:flex;
-  border: 1px solid black;
+  
   width:100%;
   justify-content: center;
   align-items: center;
@@ -199,13 +203,13 @@ body {
 .hexagons-row-2 { /* for the middle two rows */
   flex: 1;
   display:flex;
-  border: 1px solid black;
+  
   width:100%;
   justify-content: center;
   align-items: center;
 }
 .hexagons-box {
-  border: 1px solid black;
+  
   height: min(100%, 160px);
   width: min(100%, 160px);
   display: flex;
@@ -244,7 +248,7 @@ body {
 .logo-outer-circle {
   width: 70%;
   height:70%;
-  border: 1px solid black;
+  
   align-items: center;
   justify-content: center;
 } 
@@ -284,7 +288,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  
 }
 
 .PS-container {
@@ -292,18 +296,18 @@ body {
   width:80%;
   height:80%;
   flex-direction: column;
-  border: 1px solid black;
+  
   align-items: center;
   justify-content: center;
 }
 
 .PS-container-title-box {
-  border: 1px solid black;
+  
   font-size: max(min(15vh, 15vw), 100px)
 }
 
 .PS-container p {
-  border: 1px solid black;
+  
   font-size: 25px;
   text-align:center;
 }
