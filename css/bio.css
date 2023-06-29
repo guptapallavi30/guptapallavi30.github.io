@@ -41,7 +41,7 @@ body {
 .text-box h2 {
     font-size: max(min(25vh, 25vw), 200px);
     color: #45193f;
-    
+    font-weight: bold;
     text-align:end;
     margin-bottom:0%;
     display: flex;
@@ -60,7 +60,7 @@ body {
 .text-box h3 {
     /* transform: translate(50%, -90%); */
     font-size: max(min(5vh, 5vw), 40px);
-    font-weight: bold;
+    /* font-weight: bold; */
     color:  white;
     margin-bottom: 40px;
   }
@@ -170,6 +170,7 @@ body {
 }
 .experience-header h3 {
   font-size: max(min(15vh, 15vw), 100px);
+  font-weight: bold;
 }
 
 
@@ -303,8 +304,8 @@ body {
 }
 
 .PS-container-title-box {
-  
-  font-size: max(min(15vh, 15vw), 100px)
+  font-weight: bold;
+  font-size: max(min(15vh, 15vw), 100px);
 }
 
 .PS-container p {
