@@ -10,7 +10,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   
   <!-- getting google font: League Spartan -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;800&display=swap" rel="stylesheet">
 
 </head>
@@ -36,7 +35,26 @@
 
       observer.observe(document.querySelector('.experience-wrapper'));
     });
+    /* for circle */
+    document.addEventListener('mousemove', function(event) {
+      var circle = document.getElementById('circle');
+      circle.style.left = event.clientX + 'px';
+      circle.style.top = event.clientY + 'px';
+    });
+
+    document.addEventListener('scroll', function(event) {
+      var mouseX = event.clientX;
+      var mouseY = event.clientY;
+      circle.style.left = mouseX + 'px';
+      circle.style.top = mouseY + 'px';
+      // Use mouseX and mouseY for further processing or display
+      console.log('Mouse X:', mouseX);
+      console.log('Mouse Y:', mouseY);
+    });
   </script>
+
+  <div id="circle"></div>
+  <!-- end of circle pointer code-->
 
   <!-- NAV BAR-->
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
