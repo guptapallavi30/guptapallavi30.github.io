@@ -4,6 +4,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-family: 'League Spartan', sans-serif !important;
+    z-index:-3;
   }
 
 .sections {
@@ -313,18 +314,37 @@ body {
   font-size: 25px;
   text-align:center;
 }
-/* 
+
 #circle {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 250px;
-  height: 250px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: gray;
   z-index: 0;
-} */
+}
+.trailing-circle {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: lightblue;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+.run-trailing-circle {
+  /* animation: follow-circle 1.7s; */
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes follow-circle {
+  from {width: 90px;}
+  to {width:120px;}
+}
 
 /*
 .hexagon {

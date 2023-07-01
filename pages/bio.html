@@ -35,12 +35,32 @@
 
       observer.observe(document.querySelector('.experience-wrapper'));
     });
-    /* for circle */
+
+    let mouseTimer; // Timer variable
     document.addEventListener('mousemove', function(event) {
       var circle = document.getElementById('circle');
       circle.style.left = event.clientX + 'px';
       circle.style.top = event.clientY + 'px';
-    });
+
+      clearTimeout(mouseTimer);
+
+      // Get all the elements with id='number'
+      const trailElements = document.querySelectorAll('#trailing-circle');
+
+      // Loop through each number element
+      trailElements.forEach(function(element) {
+        element.classList.add('run-trailing-circle');
+        
+
+        mouseTimer = setTimeout(function() {
+          // Code to be executed when the mouse stops moving
+          console.log('Mouse stopped moving');
+          element.classList.remove('run-trailing-circle');
+          // Additional actions or function calls here...
+        }, 1000); // 1-second delay
+        });
+
+      });
 
     document.addEventListener('scroll', function(event) {
       var mouseX = event.clientX;
@@ -51,9 +71,17 @@
       console.log('Mouse X:', mouseX);
       console.log('Mouse Y:', mouseY);
     });
-  </script>
+ </script>
 
-  <div id="circle"></div>
+
+  <div id="circle">
+    <div id="trailing-circle" class="trailing-circle"></div>
+    <div id="trailing-circle" class="trailing-circle"></div>
+    <div id="trailing-circle" class="trailing-circle"></div>
+    <div id="trailing-circle" class="trailing-circle"></div>
+    <div id="trailing-circle" class="trailing-circle"></div>
+    <div id="trailing-circle" class="trailing-circle"></div>
+  </div>
   <!-- end of circle pointer code-->
 
   <!-- NAV BAR-->
