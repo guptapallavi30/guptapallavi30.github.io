@@ -313,18 +313,30 @@ body {
   font-size: 25px;
   text-align:center;
 }
-/* 
+
 #circle {
   position: fixed;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
-  width: 250px;
-  height: 250px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: gray;
   z-index: 0;
+  /* animation-name: follow-circle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; */
+}
+
+/* @keyframes follow-circle {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(100%, 100%); }
 } */
+
+/* #div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;} */
 
 /*
 .hexagon {
