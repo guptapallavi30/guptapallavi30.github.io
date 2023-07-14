@@ -86,16 +86,14 @@ body {
 .experiences-section {
   display:flex;
   flex-direction: column;
-  width:90%;
-  height:80%;
+  /* width:90%;
+  height:80%; */
   
 }
 .experience-box {
-  flex: 1;
   display:flex;
   align-items:center;
   justify-content: center;
-  
 }
 
 .justify-left {
@@ -169,16 +167,15 @@ body {
 }
 
 
-.experience-header {
-  height: 30px;
-  width: 30px;
-  margin-bottom: 13px;
+.panel-label {
+  /* height: 30px;
+  width: 30px; */
   justify-content: center;
   align-items: center;
   display: flex;
   z-index: 2;
 }
-.experience-header h3 {
+.panel-label h3 {
   font-size: max(min(15vh, 15vw), 100px);
   font-weight: bold;
   color:white;
