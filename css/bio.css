@@ -173,6 +173,12 @@ body {
   font-weight: bold;
   color:white;
 }
+.panel-label h2 {
+  font-size: max(min(8vh, 8vw), 40px);
+  font-weight: bold;
+  overflow:visible;
+  color:white;
+}
 
 
 .hexagon-section-1 {
