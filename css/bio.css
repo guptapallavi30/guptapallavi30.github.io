@@ -23,10 +23,11 @@ body {
 
 
 .sections {
-  height: max(100vh, 1000px);
+  min-height: max(100vh, 1000px);
   width: 100vw;
   display: flex;
   overflow-y: hidden;
+  
 }
 .photo-container {
   display:flex;
@@ -37,11 +38,9 @@ body {
 }
 .text-box-container-big {
     display:flex;
-    height:100%;
-    width: 45%;
-    
-    align-items: center;
-    justify-content: center;
+    /* height:100%; */
+    align-items:flex-end;
+    /* justify-content: flex-end; */
     flex-direction: column;
   }
 
