@@ -117,7 +117,7 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid white;
-  border-radius: 100px;
+  border-radius: 20px;
 }
 
 .experience-description {
@@ -148,6 +148,7 @@ body {
   position: absolute;
   top:0%;
   z-index: 2;
+  background-color:#45193f;
 }
 
 
@@ -172,7 +173,6 @@ body {
 .experience-header {
   height: 30px;
   width: 30px;
-  
   margin-bottom: 13px;
   justify-content: center;
   align-items: center;

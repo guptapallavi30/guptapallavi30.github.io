@@ -18,7 +18,7 @@
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           const squares = entry.target.querySelectorAll('.experience-description-cover');
-  
+
           squares.forEach(square => {
             if (entry.isIntersecting) {
               console.log("adding animation class");
