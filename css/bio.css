@@ -250,7 +250,10 @@ body {
   justify-content: center;
 } 
 
-.hexagons-box:hover .rolling-img {
+.hexagons-box:hover .rolling-img.roll-left {
+  transform: translate(-80%, 0%);
+}
+.hexagons-box:hover .rolling-img.roll-right {
   transform: translate(80%, 0%);
 }
 
@@ -260,8 +263,14 @@ body {
 .hexagons-box:hover .project-info-circle.circ_left2 {
   transform: translate(-100%, 0%);
 }
-.hexagons-box:hover .project-info-circle.circ_left1 {
+.hexagons-box:hover .project-info-circle.circ_center {
   transform: translate(-0%, 0%);
+}
+.hexagons-box:hover .project-info-circle.circ_right3 {
+  transform: translate(200%,0%);
+}
+.hexagons-box:hover .project-info-circle.circ_right2 {
+  transform: translate(100%, 0%);
 }
 
 .hexagons-box:hover .project-info-circle.circ_bl {
