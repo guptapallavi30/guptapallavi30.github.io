@@ -120,12 +120,7 @@ body {
 .experience-description {
   font-size: 15px;
   width:80%;
-  display: flex;
-  /* overflow: hidden; */
-  position: relative;
-  z-index:1;
   color:white;
-  flex-direction: column;
   border: 1px solid white;
   border-radius: 20px; 
 }
@@ -140,7 +135,6 @@ body {
 
 .experience-description-cover {
   height: 100%;
-  border-radius: 20px;
   position: absolute;
   top:0%;
   z-index: 2;
