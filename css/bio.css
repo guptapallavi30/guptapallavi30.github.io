@@ -255,8 +255,6 @@ body {
   justify-content: center;
 } 
 
-
-
 .hexagons-box:hover .project-info-circle.circ_bl {
   transform: translate(-120%, 65%);
 }
@@ -313,56 +311,3 @@ body {
   font-size: 25px;
   text-align:center;
 }
-
-#circle {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: gray;
-  transition: transform 0.5s ease-in;
-}
-
-/* @keyframes follow-circle {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(100%, 100%); }
-} */
-
-/* #div1 {animation-timing-function: linear;}
-#div2 {animation-timing-function: ease;}
-#div3 {animation-timing-function: ease-in;}
-#div4 {animation-timing-function: ease-out;}
-#div5 {animation-timing-function: ease-in-out;} */
-
-/*
-.hexagon {
-  width: 100px; 
-  height: 100px;
-  background-color: #eaeaea; 
-  position: absolute;
-  transform: rotate(-30deg);
-}
-.hexagon:nth-child(1) {
-  background-color: aqua;
-}
-.hexagon:nth-child(2) {
-  background-color: orange;
-}
-.hexagon:nth-child(1),
-.hexagon:nth-child(2),
-.hexagon:nth-child(3) {
-  top: 0;
-}
-*/
-
-/* END OF FLIPPED CARDS */
-/*hexagon on click or hover, flip/expand to show youtube link, description. 
-near/on each hexagon, will bee aa star indicating any awards.
-in the center of the hexagon, will be the word projects.
-4 projects, then animation and 3d modeling section */
-
-/* the contact sectiion will be contact. is huugee letters, and inside the letters will be the option
-to email, access resume, access linkedin amd github, */
-/* set fixed min value of every elemt based on 800px height. */

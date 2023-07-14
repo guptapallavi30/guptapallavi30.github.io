@@ -16,8 +16,6 @@
 
 <body>
   <script>
-    let circle = null;
-    let startCoords = { x: 0, y: 0 };
     document.addEventListener("DOMContentLoaded", function () {
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -36,8 +34,6 @@
       });
 
       observer.observe(document.querySelector('.experience-wrapper'));
-
-      circle = document.getElementById('circle');
     });
     /* for circle */
     // document.addEventListener('mousemove', function(event) {
@@ -48,39 +44,10 @@
 
 
 
-    document.addEventListener('mousemove', function(event) {
-      if (!circle.classList.contains('active')) {
-        circle.classList.add('active');
-      }
+    
 
-      var newX = event.clientX;
-      var newY = event.clientY;
-
-      circle.style.transform = `translate(${newX}px, ${newY}px)`;
-    });
-
-    document.addEventListener('mouseleave', function() {
-      circle.classList.remove('active');
-    });
-
-    document.addEventListener('mouseenter', function(event) {
-      startCoords.x = event.clientX;
-      startCoords.y = event.clientY;
-      circle.style.transform = `translate(${startCoords.x}px, ${startCoords.y}px)`;
-    });
-
-    document.addEventListener('scroll', function(event) {
-      var mouseX = event.clientX;
-      var mouseY = event.clientY;
-      circle.style.left = mouseX + 'px';
-      circle.style.top = mouseY + 'px';
-      // Use mouseX and mouseY for further processing or display
-      console.log('Mouse X:', mouseX);
-      console.log('Mouse Y:', mouseY);
-    });
+    
   </script>
-
-  <div id="circle"></div>
   <!-- end of circle pointer code-->
 
   <!-- NAV BAR-->
