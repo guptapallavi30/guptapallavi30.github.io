@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-  debugger
     var container = document.getElementById("header-container");
     fetch("../pages/header.html")
       .then(function(response) {
