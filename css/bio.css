@@ -8,7 +8,7 @@ html, body {
   }
 
 .background-color-1{
-  background-color:#fd8f55;
+  background-color:#f7a071;
 }
 
 .background-color-2{
@@ -19,7 +19,7 @@ html, body {
   color:white !important;
 }
 .nav-text:hover {
-  color:#fd8f55 !important;
+  color:#f7a071 !important;
 }
 
 
@@ -66,13 +66,13 @@ html, body {
     text-align:right;
     margin-top:0%;
     font-size: min(5vh, 5vw);
-    color:  white;
+    color:  #45193f;
     /* transform: translate(0%, -10%); */
   }
 
 .text-box h3 {
     font-size: min(7vh, 7vw);
-    color:  white;
+    color:  #45193f;
     margin-bottom: 40px;
   }
 
@@ -108,13 +108,13 @@ html, body {
 }
 
 .experience-logo {
-  background-color: white;
+  background-color: #f7a071;
   height: max(min(18vw, 18vh),120px);
   width: max(min(18vw, 18vh),120px);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid white;
+  border: 1px solid #f7a071;
   border-radius: 20px;
 }
 
@@ -122,7 +122,7 @@ html, body {
   font-size: 15px;
   width:80%;
   color:white;
-  border: 1px solid white;
+  border: 1px solid #f7a071;
   border-radius: 20px; 
 }
 
@@ -172,13 +172,13 @@ html, body {
 .panel-label h3 {
   font-size: min(15vh, 15vw);
   font-weight: bold;
-  color:white;
+  color:#f7a071;
 }
 .panel-label h2 {
   font-size: max(min(8vh, 8vw), 40px);
   font-weight: bold;
   overflow:visible;
-  color:white;
+  color:#f7a071;
 }
 
 
