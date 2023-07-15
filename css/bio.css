@@ -259,37 +259,41 @@ html, body {
 } 
 
 .hexagons-box:hover .rolling-img.roll-left {
-  transform: translate(-80%, 0%);
+  transform: translate(-80%, 0%) rotateZ(-30deg);
 }
 .hexagons-box:hover .rolling-img.roll-right {
-  transform: translate(80%, 0%);
+  transform: translate(80%, 0%) rotateZ(30deg);
+}
+.hexagons-box:hover .rolling-img.move_vertically {
+  transform: translate(0%, 0%) rotateZ(30deg);
 }
 
-.hexagons-box:hover .project-info-circle.circ_translate2.translate-right {
+.hexagons-box:hover .project-info-circle.circ_translate2.roll-right {
   transform: translateX(200%);
 }
-.hexagons-box:hover .project-info-circle.circ_translate2:not(.translate-right) {
+.hexagons-box:hover .project-info-circle.circ_translate2 {
   transform: translateX(-200%);
 }
-
-.hexagons-box:hover .project-info-circle.circ_translate1.translate-right {
+.hexagons-box:hover .project-info-circle.circ_translate1.roll-right {
   transform: translateX(100%);
 }
-.hexagons-box:hover .project-info-circle.circ_translate1:not(.translate-right) {
+.hexagons-box:hover .project-info-circle.circ_translate1 {
   transform: translateX(-100%);
 }
 
-.hexagons-box:hover .project-info-circle.animate_circ {
-  transform: translate(0%, 100%);
-  /* Add your animation styles here */
-  /* For example: */
-  /* animation: spin 2s linear infinite; */
+.hexagons-box:hover .project-info-circle.move_vertically {
+  z-index: 3;
+}
+.hexagons-box:hover .project-info-circle.circ_translate1.move_vertically {
+  transform: translateX(100%);
+}
+.hexagons-box:hover .project-info-circle.circ_translate2.move_vertically {
+  transform: translateX(-100%);
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+
+
+
 
 .letter-groups {
   display: flex;
