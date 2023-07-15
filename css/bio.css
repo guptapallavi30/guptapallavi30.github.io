@@ -265,39 +265,30 @@ html, body {
   transform: translate(80%, 0%);
 }
 
-.hexagons-box:hover .project-info-circle.circ_left3 {
-  transform: translate(-200%,0%);
+.hexagons-box:hover .project-info-circle.circ_translate2.translate-right {
+  transform: translateX(200%);
 }
-.hexagons-box:hover .project-info-circle.circ_left2 {
-  transform: translate(-100%, 0%);
-}
-.hexagons-box:hover .project-info-circle.circ_center {
-  transform: translate(-0%, 0%);
-}
-.hexagons-box:hover .project-info-circle.circ_right3 {
-  transform: translate(200%,0%);
-}
-.hexagons-box:hover .project-info-circle.circ_right2 {
-  transform: translate(100%, 0%);
+.hexagons-box:hover .project-info-circle.circ_translate2:not(.translate-right) {
+  transform: translateX(-200%);
 }
 
-.hexagons-box:hover .project-info-circle.circ_bl {
-  transform: translate(-120%, 65%);
+.hexagons-box:hover .project-info-circle.circ_translate1.translate-right {
+  transform: translateX(100%);
 }
-.hexagons-box:hover .project-info-circle.circ_b {
-  transform: translate(0%, 135%);
+.hexagons-box:hover .project-info-circle.circ_translate1:not(.translate-right) {
+  transform: translateX(-100%);
 }
-.hexagons-box:hover .project-info-circle.circ_br {
-  transform: translate(120%, 65%);
+
+.hexagons-box:hover .project-info-circle.animate_circ {
+  transform: translate(0%, 100%);
+  /* Add your animation styles here */
+  /* For example: */
+  /* animation: spin 2s linear infinite; */
 }
-.hexagons-box:hover .project-info-circle.circ_tl {
-  transform: translate(-120%, -65%);
-}
-.hexagons-box:hover .project-info-circle.circ_t {
-  transform: translate(0%, -130%);
-}
-.hexagons-box:hover .project-info-circle.circ_tr {
-  transform: translate(120%, -65%);
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .letter-groups {
