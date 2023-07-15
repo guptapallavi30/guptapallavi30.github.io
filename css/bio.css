@@ -1,5 +1,6 @@
-body {
+html, body {
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -51,7 +52,7 @@ body {
   }
   
 .text-box h2 {
-    font-size: max(min(25vh, 25vw), 200px);
+    font-size: min(25vh, 25vw);
     color: #45193f;
     font-weight: bold;
     text-align:end;
@@ -64,13 +65,13 @@ body {
     
     text-align:right;
     margin-top:0%;
-    font-size: max(min(3vh, 3vw), 24px);
+    font-size: min(5vh, 5vw);
     color:  white;
     /* transform: translate(0%, -10%); */
   }
 
 .text-box h3 {
-    font-size: max(min(5vh, 5vw), 40px);
+    font-size: min(7vh, 7vw);
     color:  white;
     margin-bottom: 40px;
   }
@@ -169,7 +170,7 @@ body {
   z-index: 2;
 }
 .panel-label h3 {
-  font-size: max(min(15vh, 15vw), 100px);
+  font-size: min(15vh, 15vw);
   font-weight: bold;
   color:white;
 }
@@ -327,7 +328,7 @@ body {
 
 .PS-container-title-box {
   font-weight: bold;
-  font-size: max(min(15vh, 15vw), 100px);
+  font-size: min(15vh, 15vw);
 }
 
 .PS-container p {
