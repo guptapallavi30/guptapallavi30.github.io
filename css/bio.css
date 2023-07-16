@@ -121,15 +121,19 @@ html, body {
 .experience-description {
   font-size: 15px;
   width:80%;
-  color:white;
+  /* color:whitesmoke; */
+  color: #f7a071;
   border: 1px solid #f7a071;
   border-radius: 20px; 
 }
 
 .experience-description b {
-  font-size: 23px;
-  color: #f7a071;
+  font-size: 25px;
 }
+.experience-description h5 {
+  color: whitesmoke;
+}
+
 .experience-description p {
   font-size: 18px;
 }
