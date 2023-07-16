@@ -39,6 +39,39 @@
         // $('.rolling-img').removeClass('move_vertically');
       }
 
+      const options = {
+        threshold: 0.1 // Adjust the threshold value as needed
+      };
+
+      const handleIntersection = (entries, observer2) => {
+        entries.forEach(entry => {
+          const targetId = entry.target.getAttribute('id');
+          const navbarText = document.querySelector('.nav-text');
+
+          console.log("-----------");
+          console.log(targetId);
+          if (entry.intersectionRatio > 0){
+            if(targetId === 'about' 
+            || targetId === 'projects' 
+            || targetId === 'contact') {
+              console.log("white");
+              navbarText.style.color = 'white';
+            } else {
+              console.log("black");
+              navbarText.style.color = 'black';
+            }
+          }
+
+        console.log("----");
+        });
+      };
+
+      const observer2 = new IntersectionObserver(handleIntersection, options);
+
+      document.querySelectorAll('section').forEach(section => {
+        observer2.observe(section);
+      });
+
     });
     $(window).on('resize', function() {
       if ($(window).width() <= 600) {
@@ -56,7 +89,7 @@
 
   <!-- NAV BAR-->
   <!-- <nav class="navbar navbar-expand-sm navbar-dark fixed-top background-color-2 turn_transparent" style="border-bottom:1px solid #f7a071;"> -->
-  <nav class="navbar navbar-expand-sm navbar-dark fixed-top fadeBackground">
+  <nav class="navbar navbar-expand-sm fixed-top fadeBackground">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">PG</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -83,7 +116,7 @@
 
   <!--BIO PANEL-->
   <!-- sections -->
-  <div id="about" class="container-fluid background-color-1" style="justify-content:center;">
+  <section id="about" class="container-fluid background-color-1" style="justify-content:center;">
     <div class="row container-fluid">
       <div class="col-md-6" >
         <div class="text-box-container-big">
@@ -111,10 +144,10 @@
           <div style="height:30px;"></div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!--EXPERIENCE PANEL-->
-  <div id="experience" class="container-fluid experience-wrapper background-color-2">
+  <section id="experience" class="container-fluid experience-wrapper background-color-2">
     <div class="panel-label">
       <h3 class="mt-5">experience.</h3>
     </div>
@@ -209,10 +242,10 @@
       </div>
       </div>      
     </div>
-  </div>
+  </section>
 
   <!--PROJECTS PANEL-->
-  <div id="projects" class="container-fluid background-color-1" >
+  <section id="projects" class="container-fluid background-color-1" >
     <div class="column">
       <div class="panel-label" >
         <h3 class="mt-5 mb-4" style="color: #45193f;">projects?</h3>
@@ -386,10 +419,10 @@
       <div class="flex row" style="height:150px;"></div>
 
     </div>
-  </div>
+  </section>
 
   <!-- PERSONAL STATEMENT PANEL -->
-  <div class="sections set-center background-color-2">
+  <section id="personal_statement" class="sections set-center background-color-2">
     <div class="PS-container" style="color:white;">
       <!-- <h3 class="PS-container-title-box">personal</h3> -->
       <div class="panel-label" >
@@ -406,10 +439,10 @@
       </div>
     </div>
     
-  </div>
+  </section>
 
   <!-- CONTACT PANEL -->
-  <div id="contact" class="sections set-center background-color-1">
+  <section id="contact" class="sections set-center background-color-1">
     <div class="letter-groups">
       <div class="letter-groups">
         <div class="letter-groups">
@@ -471,7 +504,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
 
 </body>
