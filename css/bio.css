@@ -15,21 +15,28 @@ html, body {
   background-color:#45193f;
 }
 
-/* .nav-text {
-  color:white !important;
+.nav-text {
+  color:#45193f !important;
+}
+
+.nav-text.light {
+  color:#f7a071 !important;
 }
 .nav-text:hover {
-  color:#f7a071 !important;
-} */
+  color:white !important;
+}
 
 
 .sections {
-  min-height: max(100vh, 1000px);
-  width: 100vw;
-  display: flex;
-  overflow-y: hidden;
-  
+  min-height: 100vh;
 }
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .photo-container {
   display:flex;
   height:60%;
@@ -311,22 +318,10 @@ html, body {
 }
 
 .PS-container {
-  display:flex;
+  color:white;
   width:80%;
   height:80%;
-  flex-direction: column;
-  
-  align-items: center;
-  justify-content: center;
-}
-
-.PS-container-title-box {
-  font-weight: bold;
-  font-size: min(15vh, 15vw);
-}
-
-.PS-container p {
-  
+  font-style: italic;
   font-size: 25px;
-  text-align:center;
+  text-align: center;
 }
