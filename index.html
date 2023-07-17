@@ -46,11 +46,6 @@
 
       const handleIntersection = (entries, observer2) => {
         entries.forEach(entry => {
-          console.log(entry);
-          console.log(entry.target.id + " " + entry.isIntersecting);
-          // if not intersecting anymore, change navbartext color to correct contrast color
-          // set observer to new current section.
-          // old current entry/section is completely gone
           if(entry.isIntersecting) {
             // set navbar-text color to contrast color
               const navbarText = document.querySelectorAll(".nav-text");
@@ -68,7 +63,6 @@
       const observer2 = new IntersectionObserver(handleIntersection, options);
 
       /* observe all sections. */
-      // observer2.observe(document.querySelector(".sections"));
       document.querySelectorAll(".sections").forEach(section => {
         observer2.observe(section);
       });
