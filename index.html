@@ -40,7 +40,7 @@
 
       const options = {
         threshold: 0, // Adjust the threshold value as needed
-        // rootMargin: "0px 0px 90% 0px", // Margin top: 0px, right: 0px, bottom: 90%, left: 0px
+        rootMargin: "0px 0px -95% 0px", // Margin top: 0px, right: 0px, bottom: 90%, left: 0px
         // root: null, // Default is the viewport
       };
 
@@ -50,30 +50,28 @@
           console.log(entry.target.id + " " + entry.isIntersecting);
           // if not intersecting anymore, change navbartext color to correct contrast color
           // set observer to new current section.
-          if(!entry.isIntersecting) {
-              // get current intersecting section
-              observer2.unobserve(entry.target);
-              observer2.observe(document.querySelector('section:hover'));
-              // set navbar-text color to contrast color
-              if(entry.target.classList.contains("myClass")){ // 
-                const navbarText = document.querySelectorAll(".nav-text");
-                navbarText.forEach(txt => {
-                  console.log(txt);
-                  
-                  // console.log(txt.classList);
-                  // txt.classList.toggle("light", entry.isIntersecting);
-                  
-                });
-              }
+          // old current entry/section is completely gone
+          if(entry.isIntersecting) {
+            // set navbar-text color to contrast color
+              const navbarText = document.querySelectorAll(".nav-text");
+              navbarText.forEach(txt => {
+                if(entry.target.classList.contains("background-color-2")){
+                  txt.classList.add("light");
+                }else {
+                  txt.classList.remove("light");
+                }
+              });             
             }
-
         });
       };
 
       const observer2 = new IntersectionObserver(handleIntersection, options);
 
-      /* start with only first section. */
-      observer2.observe(document.querySelector('section'));
+      /* observe all sections. */
+      // observer2.observe(document.querySelector(".sections"));
+      document.querySelectorAll(".sections").forEach(section => {
+        observer2.observe(section);
+      });
 
     });
 
