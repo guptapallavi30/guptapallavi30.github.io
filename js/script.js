@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
       rootMargin: "0px 0px -95% 0px", // Margin top, right, bottom, left. +val adds to root; -val decreases from root
       // root: null, // Default is the viewport
     };
-
+    const firstEntryId = document.querySelector("section").id;
     const handleIntersection = (entries, observer2) => {
       entries.forEach(entry => {
         if(entry.isIntersecting) {
@@ -45,7 +45,16 @@ document.addEventListener("DOMContentLoaded", function () {
               }else {
                 txt.classList.remove("light");
               }
-            });             
+            }); 
+            
+            console.log(entry);
+            /* if entry is first-child, prevent hiding navbar */
+            if(entry.target.id === firstEntryId) {
+              canHideNavbar = false;
+            }else {
+              canHideNavbar = true;
+            }
+            console.log("canHideNavbar: " + canHideNavbar);
           }
       });
     };
@@ -53,11 +62,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const observer2 = new IntersectionObserver(handleIntersection, options);
 
     /* get all queries; iterate to observe each query. */
-    document.querySelectorAll(".sections").forEach(section => {
+    document.querySelectorAll("section").forEach(section => {
       observer2.observe(section);
     });
 
     /* ----------------------------------------------------------------- */
+    let canHideNavbar = false;
     /* hide navbar on scroll down, reappear on scroll up */
     window.onscroll = function(e) {
         const navbar_items = document.querySelector(".navbar-nav");
@@ -66,13 +76,16 @@ document.addEventListener("DOMContentLoaded", function () {
           navbar_items.classList.add("show");
 
         }else { // scrolling down
-          const button = document.querySelector('.navbar-toggler');
-
-          // Check if the button is currently visible
-          const isVisible = !!(button.offsetWidth || button.offsetHeight || button.getClientRects().length);
-
-          if (!isVisible) { // button not visible, hide elems
-            navbar_items.classList.remove("show");
+          /* prevents hiding navbar on first section */
+          if(canHideNavbar) {
+            const button = document.querySelector('.navbar-toggler');
+    
+            // Check if the button is currently visible
+            const isVisible = !!(button.offsetWidth || button.offsetHeight || button.getClientRects().length);
+    
+            if (!isVisible) { // button not visible, hide elems
+              navbar_items.classList.remove("show");
+            }
           }
         }
         // updating scroll val
