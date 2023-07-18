@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     /* set navbar color too contrast background */
     const options = {
       threshold: 0, // what % of ENTRY ELEM needs to be on screen to count as intersecting
-      rootMargin: "0px 0px -95% 0px", // Margin top, right, bottom, left. +val adds to root; -val decreases from root
+      rootMargin: "-4.95% 0px -95% 0px", // Margin top, right, bottom, left. +val adds to root; -val decreases from root
       // root: null, // Default is the viewport
     };
     const firstEntryId = document.querySelector("section").id;
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const isVisible = !!(button.offsetWidth || button.offsetHeight || button.getClientRects().length);
     
             if (!isVisible) { // button not visible, hide elems
-              navbar_items.classList.remove("show");
+              // navbar_items.classList.remove("show");
             }
           }
         }
