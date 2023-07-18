@@ -14,72 +14,7 @@
   <!-- getting google font: League Spartan -->
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;800&display=swap" rel="stylesheet">
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          const squares = entry.target.querySelectorAll('.experience-description-cover');
-
-          squares.forEach(square => {
-            if (entry.isIntersecting) {
-              console.log("adding animation class");
-              square.classList.add('run-experience-description-cover');
-            }
-          });
-        });
-      });
-  
-      observer.observe(document.querySelector('.experience-wrapper'));
-      
-      /* initial orienting project panel's icons based on window size */
-      if ($(window).width() <= 600) {
-        $('.project-info-circle').addClass('move_vertically');
-      } else {
-        $('.project-info-circle').removeClass('move_vertically');
-      }
-
-      const options = {
-        threshold: 0, // Adjust the threshold value as needed
-        rootMargin: "0px 0px -95% 0px", // Margin top: 0px, right: 0px, bottom: 90%, left: 0px
-        // root: null, // Default is the viewport
-      };
-
-      const handleIntersection = (entries, observer2) => {
-        entries.forEach(entry => {
-          if(entry.isIntersecting) {
-            // set navbar-text color to contrast color
-              const navbarText = document.querySelectorAll(".nav-text");
-              navbarText.forEach(txt => {
-                if(entry.target.classList.contains("background-color-2")){
-                  txt.classList.add("light");
-                }else {
-                  txt.classList.remove("light");
-                }
-              });             
-            }
-        });
-      };
-
-      const observer2 = new IntersectionObserver(handleIntersection, options);
-
-      /* observe all sections. */
-      document.querySelectorAll(".sections").forEach(section => {
-        observer2.observe(section);
-      });
-
-    });
-
-    /* re-orienting project panel's icons based on window size */
-    $(window).on('resize', function() {
-      if ($(window).width() <= 600) {
-        $('.project-info-circle').addClass('move_vertically');
-        $('.rolling-img').addClass('move_vertically');
-      } else {
-        $('.project-info-circle').removeClass('move_vertically');
-        $('.rolling-img').removeClass('move_vertically');
-      }
-    });
-    </script>
+  <script src="../js/script.js"></script>
 </head>
 
 <body>
