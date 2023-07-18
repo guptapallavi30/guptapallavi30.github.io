@@ -15,12 +15,12 @@ html, body {
   background-color:#45193f;
 }
 
-.navbar {
+.navbar-nav {
   opacity: 0;
   animation: hide-navbar 0.5s;
 }
 
-.navbar.show {
+.navbar-nav.show {
   opacity: 1;
   animation: show-navbar 0.25s;
 }

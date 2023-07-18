@@ -60,11 +60,20 @@ document.addEventListener("DOMContentLoaded", function () {
     /* ----------------------------------------------------------------- */
     /* hide navbar on scroll down, reappear on scroll up */
     window.onscroll = function(e) {
-        const navbar_elem = document.querySelector(".navbar");
-        if(this.oldScroll > this.scrollY) { // scrolling down
-            navbar_elem.classList.add("show");
+        const navbar_items = document.querySelector(".navbar-nav");
+        
+        if(this.oldScroll > this.scrollY) { // scrolling up
+          navbar_items.classList.add("show");
+
         }else { // scrolling down
-            navbar_elem.classList.remove("show");
+          const button = document.querySelector('.navbar-toggler');
+
+          // Check if the button is currently visible
+          const isVisible = !!(button.offsetWidth || button.offsetHeight || button.getClientRects().length);
+
+          if (!isVisible) { // button not visible, hide elems
+            navbar_items.classList.remove("show");
+          }
         }
         // updating scroll val
         this.oldScroll = this.scrollY;
