@@ -58,6 +58,22 @@ document.addEventListener("DOMContentLoaded", function () {
       observer2.observe(section);
     });
 
+    /* ----------------------------------------------------------------- */
+    window.onscroll = function(e) {
+        // print "false" if direction is down and "true" if up
+        console.log(this.oldScroll > this.scrollY);
+        const navbar_elem = document.querySelector(".navbar");
+        if(this.oldScroll > this.scrollY) { // scrolling down
+            console.log("removing");
+            navbar_elem.classList.add("show");
+        }else { // scrolling down
+            console.log("removing");
+
+            navbar_elem.classList.remove("show");
+        }
+        // updating scroll val
+        this.oldScroll = this.scrollY;
+    }
 });
 
 /* ----------------------------------------------------------------- */
