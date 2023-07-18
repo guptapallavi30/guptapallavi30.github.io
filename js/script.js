@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         squares.forEach(square => {
           if (entry.isIntersecting) {
-            console.log("adding animation class");
             square.classList.add('run-experience-description-cover');
             expObserver.unobserve(entry.target);
           }
@@ -59,16 +58,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     /* ----------------------------------------------------------------- */
+    /* hide navbar on scroll down, reappear on scroll up */
     window.onscroll = function(e) {
-        // print "false" if direction is down and "true" if up
-        console.log(this.oldScroll > this.scrollY);
         const navbar_elem = document.querySelector(".navbar");
         if(this.oldScroll > this.scrollY) { // scrolling down
-            console.log("removing");
             navbar_elem.classList.add("show");
         }else { // scrolling down
-            console.log("removing");
-
             navbar_elem.classList.remove("show");
         }
         // updating scroll val
