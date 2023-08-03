@@ -255,12 +255,16 @@ html, body {
 }
 .name_box {
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .name {
   font-size: min(16vh, 16vw);
   font-weight: bold;
   color:#45193f;
-  /* border: 1px solid #e28782; */
+  text-align: center;
+  /* border: 1px solid black; */
   /* border-radius: 20px;  */
   /* padding: 0 2vw 0; */
   /* box-shadow: 0px 0px 15px white; */
@@ -331,7 +335,7 @@ html, body {
   position: absolute;
   height: 100px;
   width: 100px;
-  border-radius: 50%; /* Creates a circle by setting the border-radius to 50% */
+  /* border-radius: 50%;  */
   border: 2px solid #45193f;
   /* background-color: #45193f;  */
   background-color: #ffcecc;  
@@ -394,18 +398,24 @@ html, body {
 }
 
 .letter-box {
-  width: 170px;
-  height: 170px;
-  margin: 3px;
+  width: min(100px, 25vw);
+  height: min(100px, 25vw);
+  /* margin: 3px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #e28782;
+  text-align: center; 
+
 }
 
 .letter-box a {
   width:50%;
   height:50%;
   text-decoration: none;
+  /* display: inline-block; Display the link as a block element */
+  /* margin: 0;  */
+  
   /* color: white; */
   /* font-size: min(16vh, 16vw); */
   /* font-weight: bold; */
