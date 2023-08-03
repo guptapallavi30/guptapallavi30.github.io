@@ -189,28 +189,27 @@ html, body {
 
 .experience-description {
   font-size: 15px;
-  width:80%;
+  width:60%;
   color: #e28782;
   border: 1px solid #e28782;
   border-radius: 20px; 
 }
 
-.experience-description b {
-  font-size: 25px;
-}
+/* .experience-description b {
+  font-size: 25px; */
+/* } */
 .experience-description h5 {
-  color: #f1a6a2;
+  color: #ffcecc;
   /* color: #fff8a2; */
   /* text-shadow: 0px 0px 1px #ffd699; */
   /* color: #fff8a2; */
 }
 
-.experience-description p {
+.experience-description ul {
   font-size: 20px;
   color: #ffcecc;
-  
-  /* border: 0px 0px 1px #ffd699; */
-
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .experience-description-cover {
