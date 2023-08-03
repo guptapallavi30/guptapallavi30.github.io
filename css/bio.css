@@ -245,16 +245,18 @@ html, body {
   font-weight: bold;
   color:#f7a071;
 }
-.panel-label h4 {
-  /* pallavi */
-  font-size: min(20vh, 20vw);
+.name_box {
+  width: 100vw;
+}
+.name {
+  font-size: min(16vh, 16vw);
   font-weight: bold;
-  color:#f7a071;
+  color:#45193f;
   /* border: 1px solid #f7a071; */
-  border-radius: 20px; 
-  padding: 0 5vw 0;
+  /* border-radius: 20px;  */
+  /* padding: 0 2vw 0; */
   /* box-shadow: 0px 0px 15px white; */
-  box-shadow: 1px 1px 3px white, -1px -1px 3px white, 1px -1px 3px white, -1px 1px 3px white;
+  text-shadow: 1px 1px 1px white, -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white;
   /* text-shadow: 1px 1px 1px white; */
 
 }
