@@ -256,10 +256,12 @@ html, body {
   /* border-radius: 20px;  */
   /* padding: 0 2vw 0; */
   /* box-shadow: 0px 0px 15px white; */
-  text-shadow: 1px 1px 1px white, -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white;
+  text-shadow: 1px 1px 4px white, -1px -1px 4px white, 1px -1px 4px white, -1px 1px 4px white;
   /* text-shadow: 1px 1px 1px white; */
-
 }
+
+
+
 .panel-label h2 {
   font-size: max(min(8vh, 8vw), 40px);
   font-weight: bold;
@@ -389,6 +391,28 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.letter-box a {
+  width:50%;
+  height:50%;
+  text-decoration: none;
+  /* color: white; */
+  /* font-size: min(16vh, 16vw); */
+  /* font-weight: bold; */
+  color:white;
+  text-shadow: 0px 0px 4px #45193f;
+  /* border: 1px solid #f7a071; */
+  /* border-radius: 20px;  */
+  /* padding: 0 2vw 0; */
+  /* box-shadow: 0px 0px 15px white; */
+  /* text-shadow: 1px 1px 1px white, -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white; */
+  /* text-shadow: 1px 1px 1px white; */
+}
+.letter-box a:hover {
+  /* Optional: Add styles for the link on hover */
+  color:  #45193f;
+  text-shadow: 0px 0px 4px white;
 }
 
 .PS-container {
