@@ -121,7 +121,7 @@ html, body {
   }
   
 .text-box h2 {
-    font-size: min(25vh, 25vw);
+    font-size: min(20vh, 20vw);
     color: #45193f;
     font-weight: bold;
     text-align:end;
@@ -134,13 +134,13 @@ html, body {
     
     text-align:right;
     margin-top:0%;
-    font-size: min(5vh, 5vw);
+    font-size: min(4vh, 4vw);
     color:  #45193f;
     /* transform: translate(0%, -10%); */
   }
 
 .text-box h3 {
-    font-size: min(7vh, 7vw);
+    font-size: min(6vh, 6vw);
     color:  #45193f;
     margin-bottom: 40px;
   }
