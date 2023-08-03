@@ -8,7 +8,8 @@ html, body {
   }
 
 .background-color-1{
-  background-color:#f7a071;
+  background-color:#e28782;
+  /* background-color:#e28782; */
 }
 
 .background-color-2{
@@ -57,7 +58,7 @@ html, body {
 }
 
 .nav-text.light {
-  color:#f7a071 !important;
+  color:#db7a75 !important;
   text-shadow: 0px 0px 1px white;
 }
 .nav-text:hover {
@@ -175,21 +176,21 @@ html, body {
 }
 
 .experience-logo {
-  background-color: #f7a071;
+  background-color: #db7a75;
   height: max(min(18vw, 18vh),120px);
   width: max(min(18vw, 18vh),120px);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #f7a071;
+  border: 1px solid #db7a75;
   border-radius: 20px;
 }
 
 .experience-description {
   font-size: 15px;
   width:80%;
-  color: #f7a071;
-  border: 1px solid #f7a071;
+  color: #db7a75;
+  border: 1px solid #db7a75;
   border-radius: 20px; 
 }
 
@@ -243,7 +244,7 @@ html, body {
 .panel-label h3 {
   font-size: min(15vh, 15vw);
   font-weight: bold;
-  color:#f7a071;
+  color:#db7a75;
 }
 .name_box {
   width: 100vw;
@@ -252,7 +253,7 @@ html, body {
   font-size: min(16vh, 16vw);
   font-weight: bold;
   color:#45193f;
-  /* border: 1px solid #f7a071; */
+  /* border: 1px solid #db7a75; */
   /* border-radius: 20px;  */
   /* padding: 0 2vw 0; */
   /* box-shadow: 0px 0px 15px white; */
@@ -266,7 +267,7 @@ html, body {
   font-size: max(min(8vh, 8vw), 40px);
   font-weight: bold;
   overflow:visible;
-  color:#f7a071;
+  color:#db7a75;
 }
 
 
@@ -402,7 +403,7 @@ html, body {
   /* font-weight: bold; */
   color:white;
   text-shadow: 0px 0px 4px #45193f;
-  /* border: 1px solid #f7a071; */
+  /* border: 1px solid #db7a75; */
   /* border-radius: 20px;  */
   /* padding: 0 2vw 0; */
   /* box-shadow: 0px 0px 15px white; */
