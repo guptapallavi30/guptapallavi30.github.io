@@ -335,7 +335,7 @@ html, body {
   position: absolute;
   height: 100px;
   width: 100px;
-  /* border-radius: 50%;  */
+  border-radius: 50%; 
   border: 2px solid #45193f;
   /* background-color: #45193f;  */
   background-color: #ffcecc;  
@@ -351,6 +351,7 @@ html, body {
   height:70%;
   align-items: center;
   justify-content: center;
+  /* border-radius: 50%; */
 } 
 
 .hexagons-box:hover .rolling-img.roll-left {
